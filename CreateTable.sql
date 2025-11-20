@@ -4,5 +4,5 @@ create table volcanoes_tbl(
     location CHARFIELD(25),
     active BOOLEAN(5),
     last_erupted INTEGER(4),
-    image BLOB
+    image_data BLOB
 );

@@ -10,13 +10,13 @@ cur = con.cursor()
 
 # Open the text file for reading. We need to set ',' as the delimiter since this is how most files are setup!
 # This may need some error checking ...
-with open('Volcanoes_tbl1.csv') as f:
+with open('Volcanoes_tbl1.txt') as f:
     reader = csv.reader(f, delimiter=',')
     for row in reader:
         print(row)
         try:
-            cur.execute("INSERT INTO volcanoes (name,type,location,active,last_erupted,image) VALUES(?,?,?,?,?,?)", row)
-        except sqlite3.Error as error: 
+            cur.execute("INSERT INTO volcanoes_tbl (name,type,location,active,last_erupted,image_data) VALUES(?,?,?,?,?,?)", row)
+        except sqlite3.Error as error:            
             print("Error inserting value into table.")
 print("Committing changes ...")
 try:
