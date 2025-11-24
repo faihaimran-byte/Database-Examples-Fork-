@@ -55,7 +55,7 @@ Try these queries:
 
 6. SELECT name, type FROM volcanoes_tbl WHERE type = 'Quiet' AND location = 'New Zealand';
 
-Running SQL queries and althernate way
+Running SQL queries and alternate way
 
 For each of the above, add in the prefix "volcanoes_tbl.<columnname>". For example, question 1 would be:
 
