@@ -18,4 +18,5 @@ WHERE sweet_tbl.price <= '$5.00'
 GROUP BY category_tbl.category_id
 ORDER BY count(category_tbl.category_id);
 
-4.  
+4. Create your own SQL query.
+  
